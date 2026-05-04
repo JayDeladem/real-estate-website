@@ -5,64 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="main-container">
+    <section class="hero-section">
         <nav>
-            <div class="logo">
-                <p><span class="general">General</span><br><span class="project">Project</span></p>
-            </div>
+            <div class="logo"><span class="general">General</span><br><span class="project">Project</span></div>
 
-            <div class="main-items">
-                <ul>
+            <ul>
                     <li>Home</li>
                     <li>Services</li>
                     <li>Find a Team</li>
                     <li>About Us</li>
-                </ul>
-            </div>
-
-            <div class="sub-main-items">
-                <ul>
                     <li>Articles</li>
-                    <li>Portfolio</li>
+                    <li>Portofolio</li>
                     <li>Contact Us</li>
-                </ul>
-            </div>
+            </ul>
         </nav>
 
-        <div class="hero-section">
-            <p class="hero-sec"><span class="hero-heading-1">We Provide<br>Architectural design<br>and Construction</span><br><span class="hero-para-1">More than 100 building and housing projects that we have built.<br>The building owner chose us over other contractors in Jakarta,<br>because our work is different.</span></p>
-            
-            <img src="/img/building.png" class="building">
-        
-            <button type="submit">Discover More</button>
-
-            <div class="numbers">
-                <p><span class="hero-numbs">300<span class="plus">+</span><br><span class="numbs-text">Happy<br>Client</span></p>
-                <p><span class="hero-numbs">900<span class="plus">+</span><br><span class="numbs-text">Amazing<br>Projects</span></p>
-                <p><span class="hero-numbs">20<span class="plus">+</span><br><span class="numbs-text">Awards<br>Winning</span></p>
+        <div class="container-1">
+            <div class="we-provide">
+                <h1>We provide<br>Architectural design<br>and Construction</h1>
+                <p class="we-provide-para">More than 100 building and housing projects that we have built.<br>The building owner chose us over other contractors in Jakarta,<br>because our work is different.</p>
+                <button type="button">Discover More</button>
             </div>
-
-            <div class="hero-bottom-right">
-                <p><span class="general-2">General</span><br><span class="project-2">Project</span></p>
-                <p><span class="year-25">25 </span><span class="general-2">Years <img src="/img/Group.png"> </span><br><span class="project-2">Operated</span></p>
-                <p class="bottom-right-para">As a trusted general project that has been<br>operating for 25 years, our commitment is<br>always to prioritize our client satisfaction</p>
-
-            </div>
+            <img src="/building.png" id="building" lazy>
         </div>
-    </div>
 
-    <div class="logo-group">
-        <img src="/img/logo1.png">
-        <img src="/img/logo2.png">
-        <img src="/img/logo3.png">
-        <img src="/img/logo4.png">
-        <img src="/img/logo5.png">
+        <div class="container-2">
+                <div class="numbers">
+                    <p><span class="hero-numbs">300<span class="plus">+</span><br><span class="numbs-text">Happy<br>Client</span></p>
+                    <p><span class="hero-numbs">900<span class="plus">+</span><br><span class="numbs-text">Amazing<br>Projects</span></p>
+                    <p><span class="hero-numbs">20<span class="plus">+</span><br><span class="numbs-text">Awards<br>Winning</span></p>
+                </div>
+           
+                <div class="bottom-right">
+                    <p><span class="general-2">General</span><br><span class="project-2">Project</span></p>
+                    <p><span class="year-25">25 </span><span class="general-2">Years <img src="/Group.png"> </span><br><span class="project-2">Operated</span></p>
+                    <p class="bottom-right-para">As a trusted general project that has been<br>operating for 25 years, our commitment is<br>always to prioritize our client satisfaction</p>
+                </div>
+        </div>
+    </section>
+
+     <div class="logo-group">
+        <img src="/logo1.png">
+        <img src="/logo2.png">
+        <img src="/logo3.png">
+        <img src="/logo4.png">
+        <img src="/logo5.png">
     </div>
 
     <div class="services-container">
@@ -72,9 +65,9 @@
         </div>
 
         <div class="service-images">
-            <img src="/img/Mask Group.png">
-            <img src="img/Mask Group (1).png">
-            <img src="/img/Mask Group (2).png">
+            <img src="/Mask Group.png">
+            <img src="/Mask Group (1).png">
+            <img src="/Mask Group (2).png">
         </div>
 
             <div class="service-text">
@@ -84,8 +77,9 @@
             </div>
     </div>
 
+    
     <div class="difference-container">
-        <img src="/img/Rectangle 8.png" class="rectangle">
+        <img src="/Rectangle 8.png" class="rectangle">
 
         <div class="difference-text">
             <p class="difference-title">What Make Us<br>Different?</p>
@@ -93,10 +87,10 @@
         </div>
 
         <div class="difference-icons">
-            <div class="eclipse-cont"><img src="/img/Vector.png" class="vector"></div>
-            <div class="eclipse-cont"><img src="/img/pricetag.png" class="pricetag"></div>
-            <div class="eclipse-cont"><img src="/img/time.png" class="time"></div>
-            <div class="eclipse-cont"><img src="/img/shield.png" class="shield"></div>
+            <div class="eclipse-cont"><img src="/Vector.png" class="vector"></div>
+            <div class="eclipse-cont"><img src="/pricetag.png" class="pricetag"></div>
+            <div class="eclipse-cont"><img src="/time.png" class="time"></div>
+            <div class="eclipse-cont"><img src="/shield.png" class="shield"></div>
         </div>
 
         <div class="difference-explain">
@@ -108,11 +102,11 @@
 
         <div class="big-mask">
             <div class="mask-lady-group">
-                <img src="/img/Mask Group (3).png" class="mask-3">
+                <img src="/Mask Group (3).png" class="mask-3">
             </div>
 
                 <div class="lady-group">
-                    <img src="/img/lady.png" class="lady"><br><br>            <p class="lady-para"><span class="lady-name">Dianne Russell</span><br><span class="lady-text">More than 20 years of experience<br>in the field architecture and has<br>worked on project up to 100+</span></p>
+                    <img src="/lady.png" class="lady"><br><br>            <p class="lady-para"><span class="lady-name">Dianne Russell</span><br><span class="lady-text">More than 20 years of experience<br>in the field architecture and has<br>worked on project up to 100+</span></p>
                 </div>
 
                 <div class="meet-talk">
@@ -120,23 +114,25 @@
 
                     <div class="btn">
                     <button type="submit" class="see">See all team</button>
-                        <p>How it works <img src="/img/arrow.png"></p>
+                        <p>How it works <img src="/arrow.png"></p>
                     </div>
                 </div>
             </div>
-            <div class="story-container">
+
+             <div class="story-container">
                 <p><span class="story-title">Our Story<br>Who we are</span><br><span class="story-para">Established in 1992, PT. Wahana Cipta operates as a General<br>Contracting company with a footprint that we have planted<br>throughout Indonesia. Initially, we focused on construction in<br>the field of residential housing development in Jakarta.<br>As the company grows, now we are present as a reliable...</span><br><button type="submit" class="see">See more</button></p>
 
-                <img src="/img/Mask Group (4).png" class="group-4">
+                <img src="/Mask Group (4).png" class="group-4">
             </div>
 
+            
             <div class="news-container">
                 <p class="update">News & Update</p>
 
                 <div class="update-images">
-                    <img src="/img/Mask Group (5).png">
-                    <img src="/img/Mask Group (6).png">
-                    <img src="/img/Mask Group (7).png">
+                    <img src="/Mask Group (5).png">
+                    <img src="/Mask Group (6).png">
+                    <img src="/Mask Group (7).png">
                 </div>
 
                 <div class="all-titles">
@@ -165,58 +161,71 @@
                 </div>
             </div>
 
-            <div class="collection-container">
-                <p class="collection-title">Our collection<br>best project</p>
-                <img src="/img/Group 10.png" class="group-10">
+            <div>
+                <span class="our-collection">Our collection<br> best project</span>
 
-                <div class="tower">
-                    <p><span class="treasury">Treasury Tower</span><br><span class="p-completed">Project Completed</span></p>
-                    <img src="/img/arrow-2.png" class="p-arrow">
-                </div>
-            </div>
-        </div><br><br><br><br><br>
-        
+                    <div class="picture-box">
+                        <img src="/pic1.png" class="picture">
+                        <img src="/pic2.png" class="picture">
+                        <img src="/pic3.png" class="picture">
+                        <img src="/pic4.png" class="picture">
+                       
+                    </div>
 
-            <div class="testimony-container">
-                <div class="testimony-inner">
-                    <img src="/img/unsplash_6anudmpILw4.png" class="customer-pic">
-                    <p><span class="testimony-title">What we have done &<br>what our Customers say</span><br><br><span class="testimony-para">We are to help you build a excellent build, with<br>us nothing is impossible. See what we have done<br>and what they have to say about our work perform.</span><br><br>
-                        <img src="/img/bi_arrow-down (3).png" class="arrow-down-2">  
-                    <img src="/img/arrow-2.png" class="arrow-down"> </p>
+                <div class="border-box">
+                    <span class="treasury-tower">Treasury Tower</span><br>
+                    <span class="project-completed">Project Completed </span>
+                    <i class="fa-solid fa-arrow-right" style="background: #0A72AD; padding: 5px; margin-left: 10px;" ></i>
                 </div>
 
-                <div class="profile-card">
-                    <p><span class="profile-name">Jacob Molen</span><br><span class="profile-text">We like the final result this project,<br>in extraordinary and also provides<br>the best service to the client</span></p>
-                    
-                </div>
             </div>
 
-            <div class="footer">
-                <div class="f_group_1">
-                    <h>General Project</h>
-                    <p class="f_text">is a general contractor company based in Jakarta. More than 25 years of<br>experience in building and carving out Indonesia's development.</p><br>
-                    <div class="socials">
-                        <i class="fa-brands fa-google"></i>
-                        <img src="/img/Icon (2).png">
-                        <img src="/img/Icon (3).png">
-                        <img src="/img/Icon (4).png">
+        <div class="border-box-one">
+
+            <div><img src="/unsplash_6anudmpILw4.png" style="width: 249px;height: 250px;"></div>
+
+            <div> 
+                <div class="customer">What we have done  & what our Customers say</div>
+                <span class="impossible">We are to help you build a excellent build, with us nothing is impossible. See what we have done and what they have to say about our work perform.</span>
+
+                <div><span><i class="fa-solid fa-arrow-left" style="color: white;margin-right: 20px;"></i></span><span><i class="fa-solid fa-arrow-right" style="background: #0A72AD; padding: 5px;color: white;" ></i></span></div>
+
+            </div>
+
+            <div class="border-box-two">
+                <span class="Jacob">Jacob Molen</span>
+                <span class="extraodnary">We like the final result this project, in extraordinary and also provides the best service to the client </span>
+            </div>
+
+            <span class="quote-left"><i class="fa-solid fa-quote-left" style="color: #0A72AD;"></i></span>
+
+
+        </div>
+
+        <footer>
+
+            <div class="footer-div">
+
+                <div>
+                    <span class="general-project">General Project</span><br><br>
+                    <span class="carving">is a general contractor company based in Jakarta. More than 25 years of experience in building and carving out Indonesia's development.</span>
+                    <div class="brands">
+                        <span ><i class="fa-brands fa-google"></i></span>
+                        <span ><i class="fa-brands fa-twitter"></i></span>
+                        <span ><i class="fa-brands fa-instagram"></i></span>
+                        <span ><i class="fa-brands fa-linkedin-in"></i></span>
                     </div>
                 </div>
 
-                <div class="f_group_2">
-                    <h>Company</h>
-                        <li>About</li>
-                        <li>How it Works</li>
-                        <li>Term</li>
-                        <li>Privacy</li>
+                <div class="last-comment">
+                    <span class="last-comment-done">Company</span> <br><br> About <br><br> How it works <br><br> Term  <br><br> Privacy Policy
                 </div>
 
-                <div class="f_group_3">
-                    <h>More</h>
-                    <li>Documentation</li>
-                    <li>License</li>
+                <div class="last-comment">
+                    <span class="last-comment-done">More</span> <br><br> Documantation <br><br> License
                 </div>
+
             </div>
-    
+        </footer>
 </body>
 </html>
