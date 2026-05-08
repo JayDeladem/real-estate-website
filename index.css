@@ -110,33 +110,178 @@ line-height:25x;
     padding:5px;
 }
 
-.logo-group{
-    display:flex; gap:20px; justify-content: space-around; padding:20px;
+/*.logo-group{
+    display:flex; gap:100px; justify-content: space-around; padding:20px;
+    align-items:center;
+    margin-left:10px;
 }
 
-.service-images, .service-text, .difference-explain, .difference-icons, .story-container{
+/* --- Logo Section --- */
+.logo-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Allows logos to wrap on small screens */
+    padding: 40px 5%;
+    gap: 20px;
+}
+
+.client-logo {
+    width: 120px;
+    height: auto;
+    filter: grayscale(100%); /* Makes logos look professional; removes on hover */
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.client-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* --- Services Header --- */
+.services-container {
+    padding: 60px 5%;
+}
+
+.service-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    gap: 40px;
+}
+
+.service-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    flex: 1;
+}
+
+.service-para {
+    flex: 1;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* --- Services Grid --- */
+.services-wrapper {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.service-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.service-title {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+}
+
+/* --- MOBILE RESPONSIVE --- */
+@media screen and (max-width: 858px) {
+    /* Stack the Header */
+    .service-details {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    /* Stack the Service Cards */
+    .services-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .service-heading {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}
+
+/*#logos{
+    width:200px;
+    height:60px;
+}*/
+
+/* Desktop: 4 columns */
+.picture-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* Tablet: 2 columns */
+@media (max-width: 1024px) {
+  .picture-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 600px) {
+  .picture-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.picture{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.picture-grid{
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.group-4{
+    width:350px;
+    height:250px;
+}
+
+/*.service-images, .service-text, */.difference-explain, .difference-icons, .story-container{
     display: flex; justify-content: space-around; padding:10px;
 }
 
-.services-container{
+/*.services-container{
     background: #F6F6F6CC;
 }
 
-.service-heading, .difference-title{
+.service-heading,*/ .difference-title{
     color:#242527; font-style:SemiBold; font-weight:600; font-size:42px; margin-left: 40px;
 }
 
-.service-para, .difference-para, .difference-para-2, .meet-text, .story-para, .all-text{
+/*.service-para, */.difference-para, .difference-para-2, .meet-text, .story-para, .all-text{
     color:#C4C4C4; font-style: medium; font-weight: 500; font-size:15px;
 }
 
-.service-details, .difference-text{
+/*.service-details,*/ .difference-text{
     display:flex;
     justify-content: space-between; align-items: first baseline; margin-right:40px; 
     padding:10px;
 }
 
-.service-title, .difference-title-2{
+/*.service-title,*/ .difference-title-2{
     color:#242527; font-weight:600; font-style:SemiBold; font-size:24px;
 }
 
@@ -183,8 +328,9 @@ width:210px; padding:10px; position:absolute; text-align:center;left:320px; marg
 
 .lady-para{
     text-align: center;
-}   
-.title-heading{
+} 
+
+/*.title-heading{
     display:flex;
     gap:10px;
 }
@@ -199,18 +345,120 @@ width:210px; padding:10px; position:absolute; text-align:center;left:320px; marg
     display:flex;
     gap:150px;
     padding:10px;
-}
+}*/
 
 .read-more{
     color:#0775B4;
 }
 
-.update, .collection-title{
+/*.update, */.collection-title{
     margin-left:20px;
 }
 
-.update-title{
+/*.update-title{
     font-weight:600; font-size:14px;
+}*/
+
+/* --- General Styles --- */
+.news-section {
+    padding: 60px 5%;
+    background-color: #ffffff; /* Or your preferred background */
+}
+
+.update {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* --- Layout Wrapper --- */
+.articles-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap; /* Allows stacking */
+}
+
+/* --- The Article Card --- */
+.article-card {
+    flex: 1;
+    min-width: 300px; /* Minimum width before it drops to the next line */
+    display: flex;
+    flex-direction: column;
+}
+
+.update-pic {
+    width: 100%;
+    height: 250px; /* Keeps images uniform */
+    object-fit: cover; /* Prevents stretching */
+    border-radius: 4px;
+}
+
+/* --- Date & Text Layout --- */
+.card-content {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.date-box {
+    text-align: center;
+    border-right: 2px solid #ddd;
+    padding-right: 15px;
+    height: fit-content;
+}
+
+.date {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+}
+
+.month {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.text-box {
+    flex: 1;
+}
+
+.update-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.each-item {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.read-more {
+    color: #007bff; /* Professional Blue */
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media screen and (max-width: 858px) {
+    .articles-wrapper {
+        flex-direction: column; /* Stacks cards vertically */
+        align-items: center;
+    }
+
+    .article-card {
+        width: 100%;
+        max-width: 450px; /* Keeps cards from getting too wide on tablets */
+        margin-bottom: 50px;
+    }
+
+    .update {
+        text-align: center;
+    }
 }
 
 
@@ -270,10 +518,10 @@ margin-top:5px;
                 gap: 10px;padding: 30px;
                 position: absolute;
             }
-            .picture{
+           /*.picture{
                 width: 278px;
                 height: 478px;
-            }
+            }*/
             .border-box{
                 background-color: white; 
                 width: 200px; 
@@ -281,12 +529,16 @@ margin-top:5px;
                 padding-bottom: 5px; 
                 text-align: center; 
                 position: absolute; 
-                margin-left: 360px; 
-                margin-top: 440px;
+                bottom:20px;
+                margin-left:40px;
             }
             .treasury-tower{
                 color: #242527;
                 margin-right: 50px;
+            }
+
+            .project-card{
+                position: relative;
             }
             .project-completed{
                 color: #C4C4C4; 
@@ -404,8 +656,11 @@ margin-top:5px;
                 color: white;
             }
 
+
+
+
             /* Mobile Responsiveness*/
-            @media screen and (max-width: 768px) {
+            @media(max-width: 768px) {
 
     nav {
         flex-direction: column;
@@ -413,10 +668,46 @@ margin-top:5px;
         gap: 15px;
     }
 
-    ul {
+    .checkbtn{
+        display:block;
+        cursor:pointer;
+        color:white;
+    }
+
+    .humburger-line{
+        display:block;
+        width:25px;
+        height:3px;
+        background:white;
+        margin:5px 0;
+    }
+
+    /*ul {
         flex-direction: column;
         gap: 10px;
         text-align: center;
+    }*/
+
+    nav ul li{
+        margin:30px;
+        line-height:30px;
+    }
+
+    #check{
+        display:none;
+    }
+
+    ul{
+        position:fixed;
+        width:100%;
+        height:100vh;
+        background:#1a1a1a;
+        top:80px;
+        left:-100%;
+        text-align:center;
+        flex-direction:column;
+        transition: all .5s;
+        z-index: 1000;
     }
 
     .container-1 {
@@ -491,10 +782,28 @@ margin-top:5px;
         position: static;
     }
 
-    .picture {
+    .all-text{
+        display:flex;
+        flex-wrap: wrap;
+        gap:20px;
+        padding:20px;
+    }
+
+    .each-item{
+        flex:1 1 300px;
+        width: 100%;
+    }
+
+    .general-project,
+    .carving{
+        flex-wrap:wrap;
+        align-items:center;
+    }
+
+    /*.picture {
         width: 100%;
         height: auto;
-    }
+    }*/
 
     .border-box {
         position: static;
