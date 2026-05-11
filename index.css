@@ -158,7 +158,7 @@ line-height:25x;
 
 .service-para {
     flex: 1;
-    color: #666;
+    color: #C4C4C4;
     line-height: 1.6;
 }
 
@@ -213,6 +213,10 @@ line-height:25x;
         font-size: 1.8rem;
         text-align: center;
     }
+
+    .our-collection{
+        align-items: center;
+    }
 }
 
 /* Desktop: 4 columns */
@@ -259,17 +263,24 @@ line-height:25x;
 
 .difference-title{
     color:#242527; font-style:SemiBold; font-weight:600; font-size:42px; margin-left: 40px;
-}*/
+}
 
-.difference-para, .difference-para-2, .meet-text, .story-para, .all-text{
+.difference-para-2, .meet-text, .story-para, .all-text{
     color:#C4C4C4; font-style: medium; font-weight: 500; font-size:15px;
 }
 
-.difference-text{
+.difference-para{
+    font-style:medium;
+    font-weight:500;
+    font-size:16px;
+    color: #C4C4C4;
+}
+
+/*.difference-text{
     display:flex;
     justify-content: space-between; align-items: first baseline; margin-right:40px; 
     padding:10px;
-}
+}*/
 
 .difference-title-2{
     color:#242527; font-weight:600; font-style:SemiBold; font-size:24px;
@@ -313,9 +324,9 @@ width:210px; padding:10px; position:absolute; text-align:center;left:320px; marg
     color:#0775B4;
 }
 
-.collection-title{
+/*.collection-title{
     margin-left:20px;
-}
+}*/
 
 /* --- General Styles --- */
 .news-section {
@@ -390,7 +401,7 @@ width:210px; padding:10px; position:absolute; text-align:center;left:320px; marg
 
 .each-item {
     font-size: 0.95rem;
-    color: #444;
+    color: #C4C4C4;
     line-height: 1.6;
 }
 
@@ -467,7 +478,9 @@ margin-top:5px;
 }
 
 .our-collection{
- font-size:38px; font-weight:600; color:#242527;
+ font-size:36px; font-weight:600; color:#242527;
+ padding-left:10px;
+ margin-left:20px;
 }
             .picture-box{
                 display: grid; 
@@ -877,7 +890,7 @@ margin-top:5px;
 
 /* Header Text Styling */
 .difference-text {
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -932,7 +945,7 @@ margin-top:5px;
 .feature-content p {
     font-size: 0.95rem;
     line-height: 1.6;
-    color: #555;
+    color: #C4C4C4;
 }
 
 /* --- RESPONSIVE MEDIA QUERIES --- */
@@ -948,10 +961,13 @@ margin-top:5px;
 @media (max-width: 600px) {
     .difference-text {
         text-align: center;
+        flex-wrap: wrap;
+        align-items: center;
     }
     
     .difference-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        text-align: left;
     }
 
     .feature-item {
@@ -962,4 +978,9 @@ margin-top:5px;
     .eclipse-cont {
         margin: 0 auto 20px auto; /* Centers the icon on mobile */
     }
+}
+
+html,body{
+overflow-x:hidden;
+position:relative;
 }
